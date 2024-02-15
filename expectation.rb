@@ -12,7 +12,7 @@ class ExpectationTo
     puts 'Test passed'
   end
 
-  # Avaliando se existe método corresponder no objeto
+  # Avaliando se existe método correspondente no @value
   def method_missing(method_name, *args)
     if method_name.to_s.start_with?('be_') #
       value_method = (method_name.to_s[3..-1] + '?').to_sym
@@ -52,12 +52,12 @@ end
 
 expect(1).to.be(1) # Test passed
 
-# Baseado no método .nil? do Ruby
+# Baseado no método #nil? do Ruby
 expect('').to.be_nil # Gera um erro
 expect(nil).to.be_nil # Test passed
 
 class Object
-  def present? # Simulando o método present? do Rails
+  def present? # Simulando o método #present? do Rails
     true
   end
 end
