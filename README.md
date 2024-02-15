@@ -1,65 +1,60 @@
-# Metaprogramação: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="code.jpg" align="center" alt="A laptop screen with code" width="300" style="border-radius: 4px;" />
-  * ## O que é?
-    É uma técnica de programação, em que softwares tem a habilidade de tratar outros softwares como seus dados.
-    Pode ler, gerar, analisar ou transformar outros softwares e até modificar a si próprio enquanto está sendo executado.
-    Metaprogramação é sobre escrever softwares para manipular outros softwares(ou a si próprio) como seus dados.
+# Metaprogramação: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="code.jpg" align="center" alt="Uma tela de notebook com código" width="300" />
+  É uma técnica de programação, em que softwares podem ler, gerar, analisar ou transformar outros softwares e até modificar a si próprio enquanto está sendo executado.
 
-  * ### Aplicações:
-    * Você pode considerar a metaprogramação se:
-      * Você se encontrar escrevendo código com padrões semelhantes repetidamente.
-      * Você deseja criar uma linguagem de domínio específico (DSL).
+  * ### Quando usar:
+    * Quando se encontrar escrevendo código com padrões semelhantes repetidamente.
+    * Quando desejar criar uma linguagem de domínio específico (DSL).
 
   * ### Exemplos:
+    * Em Javascript:
+      * Babel, TypeScript, React, Angular, create-react-app, Next.js, NestJS, Vue, Svelte, Vite, Lodash etc.
+    * Em Python:
+      * Django, Jinja etc.
+    * Em Ruby:
+      * Rails, RSpec etc.
+
+  * ### Os exemplos demonstrados em código serão feitos nas seguintes linguagens:
+    <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /> <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /> <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg" />
+          
 
   * ### Estaremos nos aprofundando nos tópicos abaixo:
-    * DSL(Domain Specific Language)
-    * Reflexão(Reflection)
-    * Geração de código(Code generation)
+    * [DSL (Domain Specific Language)](#dsl-(domain-specific-language))
+    * [Reflexão (Reflection)](#reflexão-(reflection))
+    * [Geração de código (Code generation)](#geração-de-código-(code-generation))
 
   ##
 
-  * ## DSL(Domain Specific Language):
-    * ### O que é?
-      DSL é uma linguagem de programação ou especificação dedicada a um problema de domínio particular, uma técnica de metaprogramação. As DSLs provêm uma sintaxe e semântica que tornam mais fácil para criar soluções para um problema específico.
+  * ## DSL (Domain Specific Language):
+    DSL é uma linguagem de programação ou especificação dedicada a um problema de domínio particular, uma técnica de metaprogramação. As DSLs provêm uma sintaxe e semântica que tornam mais fácil para criar soluções para um problema específico.
 
-    * ### Aplicações:
-      * Você pode considerar o uso de DSL se:
-        * O problema do domínio é bem definido e específico e existe uma DSL criada para ele, por exemplo, para realizar pesquisas/alterações em base de dados, SQL é a DSL.
-      * Você pode considerar a criação de uma DSL se:
-        * As linguagens de programação comuns e suas bibliotecas não conseguem expressar de maneira adequada a solução para o problema do domínio, ou se a elas fazem seu código ser muito difícil de ler e escrever.
-      * Além disso, as DSLs podem ter uma otimização de performance que as linguagens de programação comuns não podem. 
+    * ### Quando usar:
+      * O problema do domínio é bem definido e específico e existe uma DSL criada para ele, por exemplo, para realizar pesquisas/alterações em base de dados, SQL é a DSL.
+
+    * ### Quando criar:
+      * As linguagens de programação comuns e suas bibliotecas não conseguem expressar de maneira adequada a solução para o problema do domínio, ou se elas fazem seu código ser muito difícil de ler e escrever.
+    
+    * Além disso, as DSLs podem ter uma otimização de performance que as linguagens de programação comuns não podem. 
 
     * ### Exemplos:
-      * HTML templating:
-        * Para javascript:
-          * [Handlebars](https://github.com/handlebars-lang/handlebars.js)
-          * [EJS](https://github.com/mde/ejs)
-          * [Pug](https://github.com/pugjs/pug)
-          * [xander-email](https://github.com/ZaikoXander/xander-email)
-          * JSX(Criado para o React. É compilado para javascript usando o [Babel](https://github.com/babel/babel), [Vite](https://github.com/vitejs/vite))
-        * Para Python:
-          * [Jinja](https://github.com/pallets/jinja/)
-        * Para Ruby:
-          * [Liquid da Shopify](https://github.com/Shopify/liquid)
-          * [ERB](https://github.com/ruby/erb)
-          * [erubi(Implementação do ERB do Rails)](https://github.com/jeremyevans/erubi)
-          * [HAML](https://github.com/haml/haml)
-          * [Slim](https://github.com/slim-template/slim)
-      * Outros exemplos de DSLs são:
-        * SQL, CSS, RegEx etc.
-      
-  * ## Reflexão:
-    * ### O que é?
-      É a capacidade de um software de examinar e modificar sua própria estrutura e seu comportamento como dados. O software pode mudar sua própria estrutura e comportamento, como mudar valores de variáveis, adicionar novos métodos, gerar novo código, tudo em tempo de execução.
+      * Template engines de HTML:
+        * Javascript: [Handlebars](https://github.com/handlebars-lang/handlebars.js), [EJS](https://github.com/mde/ejs), [Pug](https://github.com/pugjs/pug), [xander-email](https://github.com/ZaikoXander/xander-email) e JSX(Criado para o React. É compilado para javascript usando o [Babel](https://github.com/babel/babel) ou [Vite](https://github.com/vitejs/vite))
 
-    * ### Aplicações:
-      * Você pode considerar o uso de Reflexão se:
-        * Você precisa inspecionar ou modifica o comportamento de objetos em tempo de execução.
-        * Você está trabalhando com serialização e desserialização. Ou seja transformar um objeto em um formato que pode ser armazenado ou transmitido e depois recriar o objeto a partir desse formato.
-        * Você está implementando um ORM.
-        * Você está construindo um framework de injeção de dependência.
-        * Você está escrevendo testes unitários. expect(variable).to be_present(be_present pode não ser um método nativo do RSpec ou Ruby, mas sim um método que foi adicionado em tempo de execução. Usando: #method_missing.) [Ver exemplo](expectation.rb)
-        * Você está construindo um sistema que suporta plugins ou extensões.
+        * Python: [Jinja](https://github.com/pallets/jinja/)
+
+        * Ruby: [Liquid da Shopify](https://github.com/Shopify/liquid), [ERB](https://github.com/ruby/erb), [erubi(Implementação do ERB do Rails)](https://github.com/jeremyevans/erubi), [HAML](https://github.com/haml/haml), [Slim](https://github.com/slim-template/slim)
+
+      * Outros exemplos de DSLs: SQL, CSS, RegEx etc.
+      
+  * ## Reflexão (Reflection):
+    É a capacidade de um software de examinar e modificar sua própria estrutura e seu comportamento como dados. O software pode mudar sua própria estrutura e comportamento, como mudar valores de variáveis, adicionar novos métodos, gerar novo código, tudo em tempo de execução.
+
+    * ### Quando usar:
+      * Quando precisar inspecionar ou modifica o comportamento de objetos em tempo de execução.
+      * Quando estiver trabalhando com serialização e desserialização. Ou seja transformar um objeto em um formato que pode ser armazenado ou transmitido e depois recriar o objeto a partir desse formato.
+      * Quando estiver implementando um ORM.
+      * Quando estiver construindo um framework de injeção de dependência.
+      * Quando estiver escrevendo testes unitários. expect(variable).to be_present(be_present pode não ser um método nativo do RSpec ou Ruby, mas sim um método que foi adicionado em tempo de execução. Usando: #method_missing.) [Ver exemplo](expectation.rb)
+      * Quando estiver construindo um sistema que suporta plugins ou extensões.
 
     * ### Exemplos:
       * Em Javascript:
@@ -78,6 +73,15 @@
             let methodName = 'greet'
             obj[methodName]() // Hello, world!
           ```
+        * Criar um novo método em um objeto:
+          ```javascript
+            let obj = {}
+            obj.greet = function() {
+              console.log('Hello, world!')
+            }
+            obj.greet() // Hello, world!
+          ```
+
       * Em Ruby:
         * Obter a lista de métodos de um objeto:
           ```ruby
@@ -100,30 +104,59 @@
             method_name = :my_method
             obj.send(method_name) # Hello, world!
           ```
-    
-  * ## Geração de código:
-    * ### O que é?
-      Se refere ao processo de um software criar ou manipular código automaticamente. Pode ser realizado em tempo de compilação ou em tempo de execução, e o código gerado pode ser na mesma linguagem em que foi gerada ou em outra linguagem.
+        * Criar um novo método em uma classe:
+          ```ruby
+            class MyClass
+              def my_method
+                puts 'Hello, world!'
+              end
+            end
 
-    * ### Aplicações:
-      * Você pode considerar o uso/criação de geradores de código se:
-        * Você está escrevendo código repetitivo ou muito semelhante.
-        * Você está trabalhando com diversas linguagens de programação e precisa converter código de uma linguagem para outra.
-        * Você está criando uma DSL. Você pode usar o código da DSL para gerar código em outra linguagem.
+            obj = MyClass.new
+
+            MyClass.class_eval do
+              define_method(:greet) do
+                puts 'Hello, world!'
+              end
+            end
+
+            obj.greet # Hello, world!
+          ```
+    
+  * ## Geração de código (Code generation):
+    Se refere ao processo de um software criar ou manipular código automaticamente. Pode ser realizado em tempo de compilação ou em tempo de execução, e o código gerado pode ser na mesma linguagem em que foi gerada ou em outra linguagem.
+
+    * ### Quando usar/criar:
+      * Você está escrevendo código repetitivo ou muito semelhante.
+      * Você está trabalhando com diversas linguagens de programação e precisa converter código de uma linguagem para outra.
+      * Você está criando uma DSL. Você pode usar o código da DSL para gerar código em outra linguagem.
 
     * ### Exemplos:
-      * Em Javascript:
+      * Javascript: Babel, Typescript, React, NestJS, Vite, create-react-app, Astro, Next.js, Gatsby, etc.
         * O Babel é um transpilador que converte código em ES6 para ES5.
         * O TypeScript é um superset de Javascript que compila para Javascript.
         * O próprio React é um exemplo de geração de código, pois o JSX é compilado para Javascript.
         * O NestJS usa geradores de código para criar arquivos de configuração, módulos, controladores, etc.
-        * Vite, create-react-app, Astro, Next.js, Gatsby, etc, são exemplos de frameworks que usam geradores de código para criar arquivos de configuração, páginas, etc.
+        * Vite, create-react-app, Astro, Next.js, Gatsby, etc, são exemplos de frameworks/cli's que usam geradores de código para criar arquivos de configuração, páginas, etc.
 
-      * Em Python:
-        * O Django usa geradores de código para criar arquivos de configuração, modelos, views, migrações, etc.
-        * O Flask usa geradores de código para criar arquivos de configuração, modelos, views, etc.
-        * O FastAPI usa geradores de código para criar arquivos de configuração, modelos, views, etc.
+      * Python: Django
+        * O Django usa geradores de código para criar arquivos de configuração, models, views, migrations, etc.
 
-      * Em Ruby:
-        * O Rails usa geradores de código para criar arquivos de configuração, modelos, controladores, migrações, etc.
+      * Ruby: Rails, RSpec
+        * O Rails usa geradores de código para criar arquivos de configuração, models, controllers, migrations, etc.
         * O RSpec usa geradores de código para criar arquivos de teste.
+
+    * ### Para criar geradores de código podemos utilizar:
+      * No Javascript, libs como: [fs](https://nodejs.org/docs/latest/api/fs.html), [path](https://nodejs.org/docs/latest/api/path.html) e [commander](https://github.com/tj/commander.js) para criar CLI's.
+      
+      * No Python, libs como: [os](https://docs.python.org/3/library/os.html) e [argparse](https://docs.python.org/3/library/argparse.html) para criar CLI's.
+
+      * No Ruby, libs como: [fileutils](https://ruby-doc.org/stdlib-3.0.0/libdoc/fileutils/rdoc/FileUtils.html) e [optparse](https://ruby-doc.org/stdlib-3.0.0/libdoc/optparse/rdoc/OptionParser.html) para criar CLI's.
+
+## Contribuindo
+
+Contribuições são bem-vindas! Se você tiver alguma ideia, sugestão, abra uma issue ou envie um pull request.
+
+## Licença
+
+Esta apresentação é licenciada sob a [Licença MIT](LICENSE).
