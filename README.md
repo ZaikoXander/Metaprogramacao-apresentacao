@@ -14,7 +14,7 @@
     <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /> <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /> <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg" />
           
 
-  * ### Estaremos nos aprofundando nos tópicos abaixo:
+  * ### Nos aprofundaremos nos seguintes tópicos:
     * [DSL (Domain Specific Language)](#dsl-(domain-specific-language))
     * [Reflexão (Reflection)](#reflexão-(reflection))
     * [Geração de código (Code generation)](#geração-de-código-(code-generation))
