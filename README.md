@@ -1,4 +1,4 @@
-# Metaprogramação: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="code.jpg" align="center" alt="Uma tela de notebook com código" width="300" />
+# Metaprogramação: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="code.png" align="center" alt="Uma tela de notebook com código" width="300" />
   É uma técnica de programação, em que softwares podem ler, gerar, analisar ou transformar outros softwares e até modificar a si próprio enquanto está sendo executado.
 
   * ### Quando usar:
