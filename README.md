@@ -6,12 +6,9 @@
     * Quando desejar criar uma linguagem de domínio específico (DSL).
 
   * ### Exemplos:
-    * Em Javascript:
-      * Babel, TypeScript, React, Angular, create-react-app, Next.js, NestJS, Vue, Svelte, Vite, Lodash etc.
-    * Em Python:
-      * Django, Jinja etc.
-    * Em Ruby:
-      * Rails, RSpec etc.
+    * Javascript: Babel, TypeScript, React, Angular, create-react-app, Next.js, NestJS, Vue, Svelte, Vite, Lodash, Handlebars etc.
+    * Python: Django, Jinja etc.
+    * Ruby: Rails, RSpec, ERB, Liquid etc.
 
   * ### Os exemplos demonstrados em código serão feitos nas seguintes linguagens:
     <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /> <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /> <img align="center" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg" />
